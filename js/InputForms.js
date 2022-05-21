@@ -37,3 +37,14 @@ let output = document.querySelector(".salary-output");
 salary.addEventListener("input", function () {
     output.textContent = salary.value;
 });
+
+// Password Validation.
+let password = document.querySelector("#pwd");
+let passwordError = document.querySelector(".password-error");
+password.addEventListener('input', function () {
+    let passwordRegex = RegExp("^(?=.{8,}$)(?=.*[A-Z])(?=.*[0-9])[\\w\\d]{0,}[\\W]{1}[\\w\\d]{0,}$");
+    if (passwordRegex.test(password.value))
+        passwordError.textContent = "";
+    else
+        passwordError.textContent = "Password is Invalid";
+});
