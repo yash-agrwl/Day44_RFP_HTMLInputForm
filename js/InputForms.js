@@ -19,3 +19,14 @@ email.addEventListener('input', function () {
     else
         emailError.textContent = "Email is Invalid";
 });
+
+// Mobile Validation.
+let mobile = document.querySelector("#tel");
+let mobileError = document.querySelector(".phone-error");
+mobile.addEventListener('input', function () {
+    let mobileRegex = RegExp("^[0-9]{2}[ ][0-9]{10}$");
+    if (mobileRegex.test(mobile.value))
+        mobileError.textContent = "";
+    else
+        mobileError.textContent = "Phone.No is Invalid";
+});
