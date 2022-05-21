@@ -30,3 +30,10 @@ mobile.addEventListener('input', function () {
     else
         mobileError.textContent = "Phone.No is Invalid";
 });
+
+// Update Salary value.
+let salary = document.querySelector("#salary");
+let output = document.querySelector(".salary-output");
+salary.addEventListener("input", function () {
+    output.textContent = salary.value;
+});
