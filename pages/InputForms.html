@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML Input Forms</title>
+</head>
+
+<body>
+    <form action="#">
+        <header class="headerContainer">
+            <h1>HTML 5 Form Input Fields</h1>
+        </header>
+        <div>
+            <label for="Name">text input type for Name: </label>
+            <input type="text" id="Name" name="Name" placeholder="please enter name">
+            <error-output class="Name-error"></error-output>
+        </div>
+        <div>
+            <label for="pwd">password input type: </label>
+            <input type="password" id="pwd" name="password" placeholder="please enter password">
+        </div>
+        <div>
+            <label for="email">email input type: </label>
+            <input type="email" id="email" name="Email" placeholder="please enter email">
+        </div>
+        <div>
+            <label for="url">url input type: </label>
+            <input type="url" id="url" name="url" placeholder="please enter url">
+        </div>
+        <div>
+            <label for="number">number input type: </label>
+            <input type="number" id="number" name="number" placeholder="please enter number">
+        </div>
+        <div>
+            <label for="tel">tel input type: </label>
+            <input type="tel" id="tel" name="phoneNumber" placeholder="please enter phoneNumber">
+        </div>
+        <div>
+            <label for="search">search input type: </label>
+            <input type="search" id="search" name="search" placeholder="please enter to search">
+        </div>
+        <div>
+            <label for="date">Choose a date and time: </label>
+            <input type="datetime-local" id="date" name="date">
+        </div>
+        <div>
+            <label for="salary">Choose your salary: </label>
+            <input type="range" id="salary" name="salary" min="30000" max="60000" step="100" value="40000">
+            <output class="salary-output">40000</output>
+        </div>
+        <div class="submit">
+            <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>
